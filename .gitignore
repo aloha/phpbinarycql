@@ -1,6 +1,7 @@
 build.xml
 rsync.xml
 
+.idea/
 *.pydevproject
 .metadata
 .gradle

@@ -1,0 +1,26 @@
+{
+    "name": "aloha/phpbinarycql",
+    "description": "Composer Compatible Fork of rmcfrazier/phpbinarycql",
+    "type": "library",
+    "keywords": ["cql","cassandra","composer"],
+    "authors": [
+        {
+            "name": "Robery McFrazier"
+        },
+        {
+            "name": "Travis J Ryan",
+            "email": "travisjryan@gmail.com"
+        }
+    ],
+    "homepage":"https://github.com/aloha/phpbinarycql",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "McFrazier\\PhpBinaryCql": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
