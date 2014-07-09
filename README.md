@@ -1,7 +1,7 @@
-Php Binary CQL (Composer Compatible)
+Php Binary CQL
 ============
 
-Php implementation of the CQL binary protocol.  This project is a client that will allow queries to be sent using the binary protocol.
+Php implementation of the CQL binary protocol.  This project is a client that will allow queries to be sent using the binary protocol.  This fork is composer compatible.
 
 Required PHP Modules (not installed by default)
 --------------------
