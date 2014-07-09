@@ -37,6 +37,14 @@ Add desired release to require block in composer.json
 	},
 ```
 
+Add PSR-0 line since you are loading a custom package
+```javascript
+"autoload": {
+	"psr-0": {
+	    "McFrazier\\PhpBinaryCql": "src/"
+	}
+},
+
 Update Composer or composer install if running for first time
 ```bash
 composer update
