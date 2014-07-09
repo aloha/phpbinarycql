@@ -43,14 +43,11 @@ composer update
 ```
 
 
-Things that still need to be completed
+Forked From
 --------------------------------------
-- prepared queries
+https://github.com/rmcfrazier/phpbinarycql
 
-There is an example directory that contains a very short example of how to connect to Cassandra server and issue a query.
 
 Additional Information
 ----------------------
 - Walk through of simple_query.php - http://blog.robert.mcfrazier.com/getting-started-php-binary-cql-client/
-
-More documenation/examples to come.  
