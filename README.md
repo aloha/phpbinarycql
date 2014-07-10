@@ -20,11 +20,11 @@ Add custom package to repositories section in composer.json
             "type": "package",
             "package": {
                 "name": "aloha/phpbinarycql",
-                "version": "0.0.2",
+                "version": "0.0.3",
                 "source": {
                     "url": "https://github.com/aloha/phpbinarycql",
                     "type": "git",
-                    "reference": "0.0.2"
+                    "reference": "0.0.3"
                 }
             }
         }
@@ -33,7 +33,7 @@ Add custom package to repositories section in composer.json
 Add desired release to require block in composer.json
 ```javascript
 "require": {
-        "aloha/phpbinarycql" : "0.0.2"
+        "aloha/phpbinarycql" : "0.0.3"
 	},
 ```
 
