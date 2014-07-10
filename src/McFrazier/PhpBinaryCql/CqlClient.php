@@ -86,18 +86,14 @@ class CqlClient
 	 * @param unknown $host
 	 * @param unknown $port
 	 */
-	public function __construct($host, $port)
+	public function __construct($host=null, $port=null)
 	{
-		if(!empty($host)) {
+		if(!is_null($host)) {
 			$this->_cqlHost = $host;
-		} else {
-			exit('Please supply the CQL host');
-		}
+		} 
 	
-		if(!empty($port)) {
+		if(!is_null($port)) {
 			$this->_cqlPort = (string)$port;
-		} else {
-			exit('Please supply the CQL port');
 		}
 		
 		$this->_protocol = new \McFrazier\PhpBinaryCql\CqlProtocol();
@@ -108,6 +104,13 @@ class CqlClient
 		// setting php percision a little higher
 		ini_set('precision', 17);
 		
+	}
+	
+	public function connect($host, $port)
+	{
+		$this->_cqlHost = $host;
+		$this->_cqlPort = (string)$port;
+		return $this;
 	}
 	
 	/**
