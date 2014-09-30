@@ -597,7 +597,11 @@ class CqlProtocol
 	{
 
 		$binInt = substr($frameBody, $this->_offset, 4);
-		$decInt = @unpack('N', $binInt);
+		try {
+			$decInt = @unpack('N', $binInt);
+		} catch( ErrorException $e) {
+			return false;
+		}
 		$this->_offset += 4; // increase the offset	
 		
 		// log action
