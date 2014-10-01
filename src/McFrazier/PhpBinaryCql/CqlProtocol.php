@@ -577,7 +577,11 @@ class CqlProtocol
 	public function parseShort($frameBody)
 	{
 		$binShort = substr($frameBody, $this->_offset, 2);
-		$decShort = unpack('n', $binShort);
+		try {
+			$decShort = unpack('n', $binShort);
+		} catch( ErrorException $e) {
+			return false;
+		}
 		$this->_offset += 2; // increase the offset
 		
 		// log action
